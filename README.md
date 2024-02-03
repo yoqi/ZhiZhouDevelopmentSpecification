@@ -16,6 +16,10 @@ https://developer.android.com/guide/index.html
 
 ## Develop
 
+```
+cd node_modules/gitbook-cli/node_modules/npm/node_modules/
+npm install graceful-fs@latest --save
+```
 
 ## License
 
