@@ -1,10 +1,20 @@
 # Flutter 开发规范 0.1.0 版
 
+在多年的Flutter开发过程中，总结如下开发规范，按照开发规范编写项目可以规避大多数低级错误。同时在团队协作中采用相同的规范编写代码，阅读性良好。
+
+## 项目结构
+
+Flutter代码可以开发 android、ios应用，Flutter2.0还支持web、windows、linux、mac等系统的编译。由于Flutter插件的随意性，尽量少应用插件。引用插件前要查看其源代码是否安全、高效。否则可以参照自己实现。
+
+Flutter项目结构：
+
+
 ## 代码风格
 
 ### 标识符三种类型
 
 #### 大驼峰
+
 类、枚举、typedef和类型参数
 
 ```
@@ -30,6 +40,8 @@
 ```
 
 #### 使用小写加下划线来命名库和源文件
+
+由于windows文件不严格区分大小写，所以在Flutter、Python等开发，源代码文件（类库命名）采用小写+下划线组成。
 
 ```
   library peg_parser.source_scanner;
@@ -673,7 +685,3 @@ async/await语法提高了可读性，允许你在异步代码中使用所有Dar
     return Future.wait([first, second]);
   }
 ```
-
-
-
-

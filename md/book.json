@@ -1,0 +1,22 @@
+{
+    "gitbook": "3.x",
+    "title": "ZhiZhouDevelopmentSpecification",
+    "description": "芝舟开发规范",
+    "language": "zh-hans",
+    "structure": {
+        "readme": "SUMMARY.md"
+    },
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        }
+    },
+    "plugins": [
+        "plugins": [
+            "-sharing",
+            "-livereload",
+            "-search",
+            "-fontsettings"
+        ]
+    ]
+}
