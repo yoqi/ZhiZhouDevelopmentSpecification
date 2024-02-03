@@ -18,5 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.2.11"
   }
 }
