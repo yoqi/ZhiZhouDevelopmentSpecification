@@ -1,0 +1,15 @@
+$:
+  api_trigger_vscode:
+    clouddev:
+      runner:
+        cpus: 1
+      docker:
+        cpus: 1
+        build: .ide/Dockerfile
+        image: codingci/default-env:latest
+      services:
+        - vscode
+        - docker
+      stages:
+        - name: 开启云原生远程开发
+          type: vscode:go
