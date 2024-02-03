@@ -11,12 +11,25 @@
             "showLevel": false
         }
     },
+    "generate": "site",
     "plugins": [
-        "plugins": [
-            "-sharing",
-            "-livereload",
-            "-search",
-            "-fontsettings"
-        ]
-    ]
+        "-sharing",
+        "-livereload",
+        "-search",
+        "-fontsettings"
+    ],
+    "pdf": {
+        "toc": true,
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": true,
+        "paperSize": "a4"
+    },
 }
