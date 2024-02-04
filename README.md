@@ -27,6 +27,9 @@ gitbook fetch "3.2.3"
 gitbook init
 gitbook install
 gitbook build
+- gitbook pdf .
+- gitbook epub .
+- gitbook mobi .
 
 docker run -it --rm -v /workspace:/workspace -p 4000:4000 onejar99/gitbook:light_20200617 /bin/bash
 cd /workspace/docs
