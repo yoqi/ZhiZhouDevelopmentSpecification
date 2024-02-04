@@ -1,5 +1,8 @@
 # Android 开发规范
 
+建议 Android 开发用户在查看本协议前，先了解一下 Java 开发基础规范。
+
+
 ​	Android 开发可以使用各种编码语言，比如 Java, C#, Kotlin, Flutter(Dart) ，甚至是 Vue/React/PHP 等。本文将主要介绍基于 Java 开发的 Android 开发规范。遵守这个规范的要求就是，你不要觉得自己很牛，写一些稀奇古怪的东西。
 
 

@@ -1,49 +1,46 @@
 # SUMMARY
 
-本项目翻译成中/英版本，并发布在 docs.yoqi.me 网站上面，大家可以在线查看。
+本项目翻译成中/英版本，并发布在 https://docs.yoqi.me/DevelopmentSpecification 网站上面，大家可以在线查看。
+
+* [开发规范](software/README.md)
+    * [Java开发规范](zh-cn/Java开发规范.md)
+    * [Android开发规范](zh-cn/Android开发规范.md)
+    * [Flutter开发规范](zh-cn/Flutter开发规范.md)
+    * [Python开发规范](zh-cn/Python开发规范.md)
+    * [Nodejs开发规范](zh-cn/Nodejs开发规范.md)
+    * [PHP开发规范](zh-cn/PHP开发规范.md)
+    * [C#开发规范](zh-cn/C#开发规范.md)
+    * [Go开发规范](zh-cn/Go开发规范.md)
+    * [Ruby开发规范](zh-cn/Ruby开发规范.md)
+    * [Shell开发规范](zh-cn/Shell开发规范.md)
+    * [Docker开发规范](zh-cn/Docker开发规范.md)
+    * [R语言编码规范](zh-cn/R语言编码规范.md)
+    * [Matlab编码规范](zh-cn/Matlab编码规范.md)
+    * [VB开发规范](zh-cn/VB开发规范.md)
+        * [硬件配置](software/windows/hardware.md)
+        * [系统安装](software/windows/install-windows.md)
+        * [常用软件](software/windows/software-list.md)
+    * [基础规范](software/mac/README.md)
+        * [通用设置](software/mac/setting.md)
+        * [权限问题](software/mac/permissions.md)
+        * [alias设置](software/mac/alias.md)
+        * [常用软件](software/mac/software-list.md)
+            * [iTerm2](software/mac/softwares/iTerm2.md)
+            * [brew](software/mac/softwares/brew.md)
+            * [zsh](software/mac/softwares/zsh.md)
+            * [1Password](software/mac/softwares/1Password.md)
+            * [TextExpander](software/mac/softwares/TextExpander.md)
+            * [欧陆词典](software/mac/softwares/euDic.md)
+            * [popClip](software/mac/softwares/popClip.md)
+            * [manico](software/mac/softwares/manico.md)
+            * [窗口管理器](software/mac/softwares/window-management.md)
+            * [BetterTouchTool](software/mac/softwares/bettertouchtool.md)
+        * [开发环境](software/mac/develop-environment.md)
+        * [快捷键设置](software/mac/shortcuts.md)
+        * [常用终端命令](software/mac/usefully-command.md)
+        * [dotfiles](software/mac/dotfiles.md)
+* [附录](appendix/README.md)
+    * [中英文版本](en/README.md)
 
 
 
-## 中英文版本
-
-## Java 开发规范
-
-
-
-### 基础规范
-
-
-
-### web开发
-
-
-
-### Spring 开发
-
-
-
-
-
-## 数据库设计规范
-
-
-
-### 数据表命名规范
-
-
-
-## Android 开发规范
-
-建议 Android 开发用户在查看本协议前，先了解一下 Java 开发基础规范。
-
-
-
-### 变量命名
-
-### 方法命名
-
-### 大
-
-
-
-## Flutter 开发规范
