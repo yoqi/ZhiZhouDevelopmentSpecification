@@ -7,6 +7,7 @@
     * [Android开发规范](zh-cn/Android开发规范.md)
     * [Flutter开发规范](zh-cn/Flutter开发规范.md)
     * [Python开发规范](zh-cn/Python开发规范.md)
+    * [数据库设计规范](zh-cn/数据库设计规范.md)
     * [Nodejs开发规范](zh-cn/Nodejs开发规范.md)
     * [PHP开发规范](zh-cn/PHP开发规范.md)
     * [C#开发规范](zh-cn/C#开发规范.md)
@@ -41,6 +42,6 @@
         * [dotfiles](software/mac/dotfiles.md)
 * [附录](appendix/README.md)
     * [中英文版本](en/README.md)
-
-
+    * [版本更新说明](en/README.md)
+    * [关于我们](en/README.md)
 
