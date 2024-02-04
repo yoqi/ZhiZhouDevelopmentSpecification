@@ -1,3 +1,4 @@
 /md/_book
 /pdf/*.pdf
 docs/node_modules/
+docs/_book/

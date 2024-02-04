@@ -19,6 +19,16 @@ https://developer.android.com/guide/index.html
 ```
 cd node_modules/gitbook-cli/node_modules/npm/node_modules/
 npm install graceful-fs@latest --save
+npm install -g gitbook-cli
+gitbook fetch "4.0.0-alpha.6"
+gitbook fetch "3.2.3"
+
+gitbook init
+gitbook install
+gitbook build
+
+docker run -it --rm -v /workspace:/workspace -p 4000:4000 onejar99/gitbook:light_20200617 /bin/bash
+
 ```
 
 ## License
