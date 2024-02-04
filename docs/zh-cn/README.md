@@ -1,19 +1,5 @@
 # [芝舟开发编码规范](https://git.yoqi.me/zhizhou/ZhiZhouDevelopmentSpecification)
 
-```
-        // "disqus",
-        // "ga",
-        // "katex",
-        // "richquotes",
-        // "sitemap2",
-        // "github",
-        // "edit-link",
-        // "feed",
-        // "etoc",
-        // "algolia",
-        // "tags"
-```
-
 ## 引言
 
 ​        在团队协作开发中，良好的编码规范十分重要，构建大型项目新成员加入团队，必须先了解标准开发规范。下面是近十年来的开发过程中，结合目前各种优秀编码经验，总结了这个项目，并将之开源。
