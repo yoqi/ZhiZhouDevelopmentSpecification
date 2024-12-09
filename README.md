@@ -31,10 +31,15 @@ gitbook build
 - gitbook epub .
 - gitbook mobi .
 
-docker run -it --rm -v /workspace:/workspace -p 4000:4000 onejar99/gitbook:light_20200617 /bin/bash
-cd /workspace/docs
-yarn serve
 
+
+docker run -it --rm -w /workspace/docs -v $(pwd):/workspace -p 4000:4000 onejar99/gitbook:light_20200617 /bin/bash
+
+docker run -it --rm -w /workspace/docs -v $(pwd):/workspace -p 4000:4000 onejar99/gitbook:full_20200617 /bin/bash
+
+yarn && yarn serve
+yarn pdf
+yarn epub
 ```
 
 ## License

@@ -2,3 +2,6 @@
 /pdf/*.pdf
 docs/node_modules/
 docs/_book/
+docs/*.pdf
+docs/*.epub
+docs/*.mobi

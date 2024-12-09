@@ -8,7 +8,11 @@
   },
   "scripts": {
     "serve": "gitbook serve .",
-    "build": "gitbook build"
+    "build": "gitbook build",
+    "pdf":"gitbook pdf .",
+    "epub":"gitbook epub .",
+    "mobi": "gitbook mobi .",
+    "all":"yarn build && yarn pdf && yarn epub && yarn mobi"
   },
   "repository": {
     "type": "git",
