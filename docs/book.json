@@ -1,0 +1,75 @@
+{
+    "gitbook": "3.x",
+    "title": "ZhiZhouDevelopmentSpecification",
+    "description": "芝舟开发规范",
+    "language": "zh-hans",
+    "structure": {
+        "readme": "SUMMARY.md"
+    },
+    "generate": "site",
+    "plugins": [
+        "-sharing",
+        "-livereload",
+        "-search",
+        "-fontsettings"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        },
+        "disqus": {
+            "shortName": "algorithm4bill"
+        },
+        "ga": {
+            "token": "UA-32317667-7"
+        },
+        "richquotes": {
+            "todos": true
+        },
+        "sitemap2": {
+            "hostname": "http://algorithm.yuanbin.me/"
+        },
+        "github": {
+            "url": "https://github.com/billryan/algorithm-exercise"
+        },
+        "edit-link": {
+            "base": "https://github.com/billryan/algorithm-exercise/edit/master",
+            "label": {
+                "en": "Edit Page",
+                "zh-hans": "编辑此页",
+                "zh-tw": "編輯此頁"
+            }
+        },
+        "feed": {
+            "title": "Data Structure and Algorithm notes",
+            "description": "Data Structure and Algorithm notes/数据结构与算法学习笔记/leetcode/lintcode 题解",
+            "hostname": "https://algorithm.yuanbin.me",
+            "author": "billryan",
+            "categories": [
+                "programming",
+                "algorithm",
+                "leetcode"
+            ]
+        },
+        "algolia": {
+            "index": "algorithm",
+            "applicationID": "9YBMOZR89J",
+            "publicKey": "5860a3e55ee72831917b1b9e2a4649ca",
+            "freeAccount": "true"
+        }
+    },
+    "pdf": {
+        "toc": true,
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": true,
+        "paperSize": "a4"
+    }
+}
