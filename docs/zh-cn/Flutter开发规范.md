@@ -1,4 +1,4 @@
-# Flutter 开发规范 0.1.0 版
+# Flutter 开发规范
 
 在多年的Flutter开发过程中，总结如下开发规范，按照开发规范编写项目可以规避大多数低级错误。同时在团队协作中采用相同的规范编写代码，阅读性良好。
 
@@ -7,7 +7,6 @@
 Flutter代码可以开发 android、ios应用，Flutter2.0还支持web、windows、linux、mac等系统的编译。由于Flutter插件的随意性，尽量少应用插件。引用插件前要查看其源代码是否安全、高效。否则可以参照自己实现。
 
 Flutter项目结构：
-
 
 ## 代码风格
 
@@ -19,9 +18,9 @@ Flutter项目结构：
 
 ```
   class SliderMenu { ... }
-  
+
   class HttpRequest { ... }
-  
+
   typedef Predicate = bool Function<T>(T value);
 ```
 
@@ -31,10 +30,10 @@ Flutter项目结构：
   class Foo {
     const Foo([arg]);
   }
-  
+
   @Foo(anArg)
   class A { ... }
-  
+
   @Foo()
   class B { ... }
 ```
@@ -45,7 +44,7 @@ Flutter项目结构：
 
 ```
   library peg_parser.source_scanner;
-  
+
   import 'file_system.dart';
   import 'slider_menu.dart';
 ```
@@ -54,11 +53,10 @@ Flutter项目结构：
 
 ```
   library pegparser.SourceScanner;
-  
+
   import 'file-system.dart';
   import 'SliderMenu.dart';
 ```
-
 
 #### 使用小写加下划线来命名导入前缀
 
@@ -82,9 +80,9 @@ Flutter项目结构：
 
 ```
   var item;
-  
+
   HttpRequest httpRequest;
-  
+
   void align(bool clearItems) {
     // ...
   }
@@ -96,7 +94,7 @@ Flutter项目结构：
   const pi = 3.14;
   const defaultTimeout = 1000;
   final urlScheme = RegExp('^([a-z]+):');
-  
+
   class Dice {
     static final numberGenerator = Random();
   }
@@ -108,13 +106,14 @@ Flutter项目结构：
   const PI = 3.14;
   const DefaultTimeout = 1000;
   final URL_SCHEME = RegExp('^([a-z]+):');
-  
+
   class Dice {
     static final NUMBER_GENERATOR = Random();
   }
 ```
 
 #### 不使用前缀字母
+
 因为Dart可以告诉您声明的类型、范围、可变性和其他属性，所以没有理由将这些属性编码为标识符名称。
 
 ```
@@ -136,7 +135,7 @@ Flutter项目结构：
 ```
   import 'dart:async';
   import 'dart:html';
-  
+
   import 'package:bar/bar.dart';
   import 'package:foo/foo.dart';
 ```
@@ -146,7 +145,7 @@ Flutter项目结构：
 ```
   import 'package:bar/bar.dart';
   import 'package:foo/foo.dart';
-  
+
   import 'util.dart';
 ```
 
@@ -155,7 +154,7 @@ Flutter项目结构：
 ```
   import 'package:bar/bar.dart';
   import 'package:foo/foo.dart';
-  
+
   import 'package:my_package/util.dart';
 ```
 
@@ -164,7 +163,7 @@ Flutter项目结构：
 ```
   import 'src/error.dart';
   import 'src/foo_bar.dart';
-  
+
   export 'src/error.dart';
 ```
 
@@ -175,7 +174,6 @@ Flutter项目结构：
   export 'src/error.dart';
   import 'src/foo_bar.dart';
 ```
-
 
 ### 所有流控制结构，请使用大括号
 
@@ -190,6 +188,7 @@ Flutter项目结构：
 ```
 
 #### 例外
+
 一个if语句没有else子句，其中整个if语句和then主体都适合一行。在这种情况下，如果你喜欢的话，你可以去掉大括号
 
 ```
@@ -214,7 +213,8 @@ Flutter项目结构：
 ## 注释
 
 ### 要像句子一样格式化
-除非是区分大小写的标识符，否则第一个单词要大写。以句号结尾(或“!”或“?”)。对于所有的注释都是如此：doc注释、内联内容，甚至TODOs。即使是一个句子片段。
+
+除非是区分大小写的标识符，否则第一个单词要大写。以句号结尾\(或“!”或“?”\)。对于所有的注释都是如此：doc注释、内联内容，甚至TODOs。即使是一个句子片段。
 
 ```
   greet(name) {
@@ -232,9 +232,10 @@ Flutter项目结构：
   }
 ```
 
-可以使用块注释(/…/)临时注释掉一段代码，但是所有其他注释都应该使用//
+可以使用块注释\(/…/\)临时注释掉一段代码，但是所有其他注释都应该使用//
 
 ### Doc注释
+
 使用///文档注释来记录成员和类型。
 
 使用doc注释而不是常规注释，可以让dartdoc找到并生成文档。
@@ -244,7 +245,7 @@ Flutter项目结构：
   int get length => ...
 ```
 
-> 由于历史原因，达特茅斯学院支持道格评论的两种语法:///(“C#风格”)和/**…* /(“JavaDoc风格”)。我们更喜欢/// 因为它更紧凑。/**和*/在多行文档注释中添加两个无内容的行。在某些情况下，///语法也更容易阅读，例如文档注释包含使用*标记列表项的项目符号列表。
+> 由于历史原因，达特茅斯学院支持道格评论的两种语法:///\(“C\#风格”\)和/**…\* /\(“JavaDoc风格”\)。我们更喜欢/// 因为它更紧凑。/**和_/在多行文档注释中添加两个无内容的行。在某些情况下，///语法也更容易阅读，例如文档注释包含使用_标记列表项的项目符号列表。
 
 ### 考虑为私有api编写文档注释
 
@@ -287,11 +288,12 @@ void delete(String path) {
   }
 ```
 
-## Flutter_Go 使用参考
+## Flutter\_Go 使用参考
 
 ### 库的引用
 
-flutter go 中，导入lib下文件库，统一指定包名，避免过多的```../../```
+flutter go 中，导入lib下文件库，统一指定包名，避免过多的`../../`
+
 ```
 package:flutter_go/
 ```
@@ -299,7 +301,8 @@ package:flutter_go/
 ### 字符串的使用
 
 #### 使用相邻字符串连接字符串文字
-如果有两个字符串字面值(不是值，而是实际引用的字面值)，则不需要使用+连接它们。就像在C和c++中，简单地把它们放在一起就能做到。这是创建一个长字符串很好的方法但是不适用于单独一行。
+
+如果有两个字符串字面值\(不是值，而是实际引用的字面值\)，则不需要使用+连接它们。就像在C和c++中，简单地把它们放在一起就能做到。这是创建一个长字符串很好的方法但是不适用于单独一行。
 
 ```
 raiseAlarm(
@@ -315,6 +318,7 @@ raiseAlarm('ERROR: Parts of the spaceship are on fire. Other ' +
 ```
 
 #### 优先使用模板字符串
+
 ```
 'Hello, $name! You are ${year - birth} years old.';
 ```
@@ -374,14 +378,15 @@ if (words.isNotEmpty) return words.join(' ');
 
 #### 考虑使用高阶方法转换序列
 
-如果有一个集合，并且希望从中生成一个新的修改后的集合，那么使用.map()、.where()和Iterable上的其他方便的方法通常更短，也更具有声明性
+如果有一个集合，并且希望从中生成一个新的修改后的集合，那么使用.map\(\)、.where\(\)和Iterable上的其他方便的方法通常更短，也更具有声明性
 
 ```
   var aquaticNames = animals
       .where((animal) => animal.isAquatic)
       .map((animal) => animal.name);
 ```
-#### 避免使用带有函数字面量的Iterable.forEach()
+
+#### 避免使用带有函数字面量的Iterable.forEach\(\)
 
 在Dart中，如果你想遍历一个序列，惯用的方法是使用循环。
 
@@ -399,7 +404,7 @@ for (var person in people) {
   });
 ```
 
-#### 不要使用List.from()，除非打算更改结果的类型
+#### 不要使用List.from\(\)，除非打算更改结果的类型
 
 给定一个迭代，有两种明显的方法可以生成包含相同元素的新列表
 
@@ -463,18 +468,19 @@ void error([String message = null]) {
 ### 变量
 
 #### 不要显式地将变量初始化为空
+
 在Dart中，未显式初始化的变量或字段自动被初始化为null。不要多余赋值null
 
 ```
   int _nextId;
-  
+
   class LazyId {
     int _id;
-  
+
     int get id {
       if (_nextId == null) _nextId = 0;
       if (_id == null) _id = _nextId++;
-  
+
       return _id;
     }
   }
@@ -484,14 +490,14 @@ void error([String message = null]) {
 
 ```
   int _nextId = null;
-  
+
   class LazyId {
     int _id = null;
-  
+
     int get id {
       if (_nextId == null) _nextId = 0;
       if (_id == null) _id = _nextId++;
-  
+
       return _id;
     }
   }
@@ -508,7 +514,7 @@ void error([String message = null]) {
     num radius;
     num area;
     num circumference;
-  
+
     Circle(num radius)
         : radius = radius,
           area = pi * radius * radius,
@@ -518,17 +524,17 @@ void error([String message = null]) {
 
 如上代码问题：
 
-- 浪费内存
-- 缓存的问题是无效——如何知道何时缓存过期需要重新计算？
+* 浪费内存
+* 缓存的问题是无效——如何知道何时缓存过期需要重新计算？
 
 推荐的写法如下：
 
 ```
   class Circle {
     num radius;
-  
+
     Circle(this.radius);
-  
+
     num get area => pi * radius * radius;
     num get circumference => pi * 2.0 * radius;
   }
@@ -552,7 +558,7 @@ void error([String message = null]) {
 
 #### 优先使用final字段来创建只读属性
 
-尤其对于 ```StatelessWidget```
+尤其对于 `StatelessWidget`
 
 #### 在不需要的时候不要用this
 
@@ -561,11 +567,11 @@ void error([String message = null]) {
 ```
   class Box {
     var value;
-    
+
     void clear() {
       this.update(null);
     }
-    
+
     void update(value) {
       this.value = value;
     }
@@ -577,11 +583,11 @@ void error([String message = null]) {
 ```
   class Box {
     var value;
-  
+
     void clear() {
       update(null);
     }
-  
+
     void update(value) {
       this.value = value;
     }
@@ -658,7 +664,7 @@ async/await语法提高了可读性，允许你在异步代码中使用所有Dar
     try {
       var team = await downloadTeam(teamName);
       if (team == null) return 0;
-  
+
       var players = await team.roster;
       return players.where((player) => player.isActive).length;
     } catch (e) {
@@ -685,3 +691,6 @@ async/await语法提高了可读性，允许你在异步代码中使用所有Dar
     return Future.wait([first, second]);
   }
 ```
+
+
+
