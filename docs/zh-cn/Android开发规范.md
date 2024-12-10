@@ -2,8 +2,11 @@
 
 建议 Android 开发用户在查看本协议前，先了解一下 Java 开发基础规范。
 
+​	Android 开发可以使用各种编码语言，比如 Java, C#, Kotlin, Flutter(Dart) ，甚至是 Vue/React/PHP 等。本文将主要介绍基于 Java 开发的 Android 开发规范。
 
-​	Android 开发可以使用各种编码语言，比如 Java, C#, Kotlin, Flutter(Dart) ，甚至是 Vue/React/PHP 等。本文将主要介绍基于 Java 开发的 Android 开发规范。遵守这个规范的要求就是，你不要觉得自己很牛，写一些稀奇古怪的东西。
+
+
+## 变量命名
 
 
 
@@ -35,25 +38,17 @@ MVVM
 
 ### 项目结构
 
-​	首先就要讲一下 Android 开发的项目结构，采用MVC
+首先就要讲一下 Android 开发的项目结构，采用MVC
 
 
 
 ## 禁用 lamda 表达式
 
-​	虽然 lamda 表达式很简洁，在很多其他语言中经常使用。Java10 也开始新增 lamda 表达式这个新特性。可以减少很多代码，但是对新手理解代码原理不太友好。
+虽然 lamda 表达式很简洁，在很多其他语言中经常使用。Java10 也开始新增 lamda 表达式这个新特性。可以减少很多代码，但是对新手理解代码原理不太友好。
 
 
 
-## IDE开发配置调优
+## Android Studio 配置调优
 
 
-
-### Android Studio
-
-
-
-
-
-## 变量命名
 

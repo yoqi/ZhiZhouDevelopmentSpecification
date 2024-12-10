@@ -2,11 +2,15 @@
 
 信息
 
-# bat/cmd 开发
+## bat/cmd 开发
 
 下
 
-# shell 开发
+## powershell 开发
+
+
+
+## linux shell 开发
 
 下 
 

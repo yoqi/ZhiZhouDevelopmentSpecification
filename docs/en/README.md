@@ -1,18 +1,5 @@
 # [芝舟开发编码规范](https://git.yoqi.me/zhizhou/ZhiZhouDevelopmentSpecification)
 
-```
-        // "disqus",
-        // "ga",
-        // "katex",
-        // "richquotes",
-        // "sitemap2",
-        // "github",
-        // "edit-link",
-        // "feed",
-        // "etoc",
-        // "algolia",
-        // "tags"
-```
 
 ## 引言
 
