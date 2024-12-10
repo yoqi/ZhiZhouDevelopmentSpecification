@@ -15,3 +15,4 @@ jobs:
       uses: ZanderZhao/gitbook-action@v1.2.4
       with:
         token: ${{ secrets.PERSONAL_TOKEN }}
+        source_dir: /docs
