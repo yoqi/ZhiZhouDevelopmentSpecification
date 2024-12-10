@@ -1,6 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
+* [基础](基础.md)
+  * [系统安装](software/windows/install-windows.md)
+  * [常用软件](software/windows/software-list.md)
 * [开发规范](software/README.md)
   * [Java开发规范](Java开发规范.md)
   * [Android开发规范](Android开发规范.md)
@@ -17,10 +20,8 @@
   * [R语言编码规范](R语言编码规范.md)
   * [Matlab编码规范](Matlab编码规范.md)
   * [VB开发规范](VB开发规范.md)
-  * [基础](基础.md)
-    * [系统安装](software/windows/install-windows.md)
-    * [常用软件](software/windows/software-list.md)
-* [\[附录\]](fu-5f555d.md)
+
+* [附录](附录.md)
   * [中英文版本](../en/README.md)
   * [版本更新说明](更新说明.md)
   * [关于我们](关于我们.md)
