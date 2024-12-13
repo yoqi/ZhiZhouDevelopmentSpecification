@@ -1,9 +1,11 @@
 # Summary
 
+This project is translated into both Chinese and English versions and published on the website https://docs.yoqi.me/DevelopmentSpecification, where it can be viewed online.
 * [Introduction](README.md)
 * [基础](基础.md)
   * [系统安装](software/windows/install-windows.md)
   * [常用软件](software/windows/software-list.md)
+
 * [开发规范](software/README.md)
   * [Java开发规范](Java开发规范.md)
   * [Android开发规范](Android开发规范.md)

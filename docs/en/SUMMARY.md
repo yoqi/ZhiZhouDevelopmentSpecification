@@ -1,6 +1,10 @@
 # SUMMARY
 
 This project is translated into both Chinese and English versions and published on the website https://docs.yoqi.me/DevelopmentSpecification, where it can be viewed online.
+* [Introduction](README.md)
+* [Basics](基础.md)
+    * [System Installation](software/windows/install-windows.md)
+    * [Common Software](software/windows/software-list.md)
 
 * [Development Specifications](software/README.md)
     * [Java Development Specifications](Java开发规范.md)
@@ -18,10 +22,8 @@ This project is translated into both Chinese and English versions and published 
     * [R Language Coding Standards](R语言编码规范.md)
     * [Matlab Coding Standards](Matlab编码规范.md)
     * [VB Development Specifications](VB开发规范.md)
-    * [Basics](基础.md)
-        * [System Installation](software/windows/install-windows.md)
-        * [Common Software](software/windows/software-list.md)
+
 * [Appendices]
-    * [Chinese and English Versions](../en/README.md)
+    * [Chinese and English Versions](../zh-cn/README.md)
     * [Version Release Notes](更新说明.md)
     * [About Us](关于我们.md)
