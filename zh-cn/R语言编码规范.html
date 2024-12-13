@@ -104,9 +104,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="software/windows/install-windows.md">
+        <li class="chapter " data-level="1.2.1" data-path="software/windows/install-windows.html">
             
-                <span>
+                <a href="software/windows/install-windows.html">
             
                     
                     系统安装
@@ -135,9 +135,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="software/README.md">
+        <li class="chapter " data-level="1.3" data-path="software/">
             
-                <span>
+                <a href="software/">
             
                     
                     开发规范
@@ -450,6 +450,167 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="r&#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x89C4;&#x8303;">R&#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x89C4;&#x8303;</h1>
+<hr>
+<h2 id="1-&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x548C;&#x683C;&#x5F0F;"><strong>1. &#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x548C;&#x683C;&#x5F0F;</strong></h2>
+<h3 id="11-&#x7F29;&#x8FDB;"><strong>1.1 &#x7F29;&#x8FDB;</strong></h3>
+<ul>
+<li>&#x4F7F;&#x7528; 2 &#x4E2A;&#x7A7A;&#x683C;&#x4F5C;&#x4E3A;&#x7F29;&#x8FDB;&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;&#x5236;&#x8868;&#x7B26;&#xFF08;Tab&#xFF09;&#x3002;</li>
+<li>&#x6BCF;&#x884C;&#x4EE3;&#x7801;&#x957F;&#x5EA6;&#x5C3D;&#x91CF;&#x63A7;&#x5236;&#x5728; <strong>80-100 &#x5B57;&#x7B26;</strong>&#x4EE5;&#x5185;&#x3002;</li>
+</ul>
+<h3 id="12-&#x7A7A;&#x683C;"><strong>1.2 &#x7A7A;&#x683C;</strong></h3>
+<ul>
+<li>&#x64CD;&#x4F5C;&#x7B26;&#xFF08;&#x5982; <code>=</code>&#x3001;<code>&lt;-</code>&#x3001;<code>+</code> &#x7B49;&#xFF09;&#x4E24;&#x4FA7;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code class="lang-r">x &lt;- <span class="hljs-number">10</span>
+y &lt;- x + <span class="hljs-number">5</span>
+</code></pre>
+</li>
+<li>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x51FD;&#x6570;&#x540D;&#x548C;&#x62EC;&#x53F7;&#x4E4B;&#x95F4;&#x4E0D;&#x52A0;&#x7A7A;&#x683C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code class="lang-r">mean(x)
+</code></pre>
+</li>
+</ul>
+<h3 id="13-&#x6CE8;&#x91CA;"><strong>1.3 &#x6CE8;&#x91CA;</strong></h3>
+<ul>
+<li>&#x5355;&#x884C;&#x6CE8;&#x91CA;&#x7528; <code>#</code>&#xFF0C;&#x5E76;&#x5728;&#x7B26;&#x53F7;&#x540E;&#x52A0;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code class="lang-r"><span class="hljs-comment"># &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6CE8;&#x91CA;</span>
+x &lt;- <span class="hljs-number">42</span>  <span class="hljs-comment"># &#x53D8;&#x91CF;&#x8D4B;&#x503C;</span>
+</code></pre>
+</li>
+<li>&#x957F;&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x7528; <code>#</code> &#x884C;&#x5206;&#x9694;&#xFF0C;&#x5982;&#xFF1A;<pre><code class="lang-r"><span class="hljs-comment"># ----------------------</span>
+<span class="hljs-comment"># &#x6570;&#x636E;&#x6E05;&#x6D17;&#x6B65;&#x9AA4;</span>
+<span class="hljs-comment"># ----------------------</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="2-&#x547D;&#x540D;&#x89C4;&#x8303;"><strong>2. &#x547D;&#x540D;&#x89C4;&#x8303;</strong></h2>
+<h3 id="21-&#x53D8;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x547D;&#x540D;"><strong>2.1 &#x53D8;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x547D;&#x540D;</strong></h3>
+<ul>
+<li>&#x4F7F;&#x7528; <strong>&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x4E0B;&#x5212;&#x7EBF;</strong>&#xFF0C;&#x9075;&#x5FAA;&#x86C7;&#x5F62;&#x547D;&#x540D;&#x6CD5;&#xFF08;snake_case&#xFF09;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code class="lang-r">average_score &lt;- <span class="hljs-number">85.5</span>
+compute_mean &lt;- <span class="hljs-keyword">function</span>(x) { mean(x) }
+</code></pre>
+</li>
+</ul>
+<h3 id="22-&#x5E38;&#x91CF;"><strong>2.2 &#x5E38;&#x91CF;</strong></h3>
+<ul>
+<li>&#x4F7F;&#x7528;&#x5168;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x5355;&#x8BCD;&#x4E4B;&#x95F4;&#x7528;&#x4E0B;&#x5212;&#x7EBF;&#x5206;&#x9694;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code class="lang-r">PI &lt;- <span class="hljs-number">3.14159</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="23-&#x6587;&#x4EF6;&#x548C;&#x811A;&#x672C;&#x547D;&#x540D;"><strong>2.3 &#x6587;&#x4EF6;&#x548C;&#x811A;&#x672C;&#x547D;&#x540D;</strong></h3>
+<ul>
+<li>&#x4F7F;&#x7528;&#x63CF;&#x8FF0;&#x6027;&#x540D;&#x79F0;&#xFF0C;&#x9075;&#x5FAA;&#x86C7;&#x5F62;&#x547D;&#x540D;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code>data_cleaning.R
+model_training.R
+</code></pre></li>
+</ul>
+<hr>
+<h2 id="3-&#x51FD;&#x6570;&#x8BBE;&#x8BA1;"><strong>3. &#x51FD;&#x6570;&#x8BBE;&#x8BA1;</strong></h2>
+<h3 id="31-&#x53C2;&#x6570;"><strong>3.1 &#x53C2;&#x6570;</strong></h3>
+<ul>
+<li>&#x51FD;&#x6570;&#x53C2;&#x6570;&#x547D;&#x540D;&#x5E94;&#x5177;&#x6709;&#x610F;&#x4E49;&#xFF0C;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5355;&#x5B57;&#x6BCD;&#xFF08;&#x5982; <code>x</code>&#xFF09;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x540D;&#xFF0C;&#x9664;&#x975E;&#x5728;&#x6570;&#x5B66;&#x6216;&#x7EDF;&#x8BA1;&#x80CC;&#x666F;&#x4E2D;&#x5408;&#x9002;&#x3002;</li>
+<li>&#x53C2;&#x6570;&#x5217;&#x8868;&#x5C3D;&#x91CF;&#x6E05;&#x6670;&#x4E14;&#x7CBE;&#x7B80;&#xFF0C;&#x4E0D;&#x5B9C;&#x8FC7;&#x957F;&#x3002;</li>
+</ul>
+<h3 id="32-&#x8FD4;&#x56DE;&#x503C;"><strong>3.2 &#x8FD4;&#x56DE;&#x503C;</strong></h3>
+<ul>
+<li>&#x51FD;&#x6570;&#x5E94;&#x8FD4;&#x56DE;&#x5355;&#x4E00;&#x7684;&#x3001;&#x6613;&#x7406;&#x89E3;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5982;&#x5411;&#x91CF;&#x3001;&#x5217;&#x8868;&#x6216;&#x6570;&#x636E;&#x6846;&#x3002;</li>
+<li>&#x907F;&#x514D;&#x51FD;&#x6570;&#x5177;&#x6709;&#x526F;&#x4F5C;&#x7528;&#xFF08;&#x5982;&#x5728;&#x51FD;&#x6570;&#x5185;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF09;&#x3002;</li>
+</ul>
+<h3 id="33-&#x6587;&#x6863;"><strong>3.3 &#x6587;&#x6863;</strong></h3>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x5E94;&#x6DFB;&#x52A0;&#x6587;&#x6863;&#x6CE8;&#x91CA;&#xFF0C;&#x5305;&#x62EC;&#x51FD;&#x6570;&#x529F;&#x80FD;&#x3001;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#x3001;&#x8FD4;&#x56DE;&#x503C;&#x7B49;&#xFF1A;<pre><code class="lang-r"><span class="hljs-comment">#&apos; &#x8BA1;&#x7B97;&#x5411;&#x91CF;&#x7684;&#x5747;&#x503C;</span>
+<span class="hljs-comment">#&apos; </span>
+<span class="hljs-comment">#&apos; @param x &#x6570;&#x503C;&#x578B;&#x5411;&#x91CF;</span>
+<span class="hljs-comment">#&apos; @return &#x6570;&#x503C;&#x578B;&#xFF0C;&#x5411;&#x91CF;&#x7684;&#x5747;&#x503C;</span>
+<span class="hljs-comment">#&apos; @examples</span>
+<span class="hljs-comment">#&apos; compute_mean(c(1, 2, 3))</span>
+compute_mean &lt;- <span class="hljs-keyword">function</span>(x) {
+  mean(x)
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="4-&#x6570;&#x636E;&#x5904;&#x7406;"><strong>4. &#x6570;&#x636E;&#x5904;&#x7406;</strong></h2>
+<ul>
+<li>&#x907F;&#x514D;&#x4F7F;&#x7528;&#x786C;&#x7F16;&#x7801;&#xFF08;&#x5982;&#x624B;&#x52A8;&#x8F93;&#x5165;&#x5217;&#x540D;&#x6216;&#x7D22;&#x5F15;&#xFF09;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x52A8;&#x6001;&#x83B7;&#x53D6;&#x3002;</li>
+<li>&#x4F18;&#x5148;&#x4F7F;&#x7528; <code>tidyverse</code> &#x5305;&#xFF08;&#x5982; <code>dplyr</code> &#x548C; <code>ggplot2</code>&#xFF09;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x4EE3;&#x7801;&#x66F4;&#x76F4;&#x89C2;&#x4E14;&#x6613;&#x8BFB;&#x3002;</li>
+</ul>
+<hr>
+<h2 id="5-&#x9519;&#x8BEF;&#x5904;&#x7406;"><strong>5. &#x9519;&#x8BEF;&#x5904;&#x7406;</strong></h2>
+<ul>
+<li>&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#xFF08;&#x5982;&#x53C2;&#x6570;&#x68C0;&#x67E5;&#xFF09;&#xFF1A;<pre><code class="lang-r">compute_mean &lt;- <span class="hljs-keyword">function</span>(x) {
+  <span class="hljs-keyword">if</span> (!is.numeric(x)) {
+    <span class="hljs-keyword">stop</span>(<span class="hljs-string">&quot;&#x53C2;&#x6570; x &#x5FC5;&#x987B;&#x662F;&#x6570;&#x503C;&#x578B;&#x5411;&#x91CF;&quot;</span>)
+  }
+  mean(x)
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="6-&#x9879;&#x76EE;&#x7BA1;&#x7406;"><strong>6. &#x9879;&#x76EE;&#x7BA1;&#x7406;</strong></h2>
+<h3 id="61-&#x9879;&#x76EE;&#x7ED3;&#x6784;"><strong>6.1 &#x9879;&#x76EE;&#x7ED3;&#x6784;</strong></h3>
+<ul>
+<li>&#x4F7F;&#x7528; RStudio &#x9879;&#x76EE;&#xFF08;<code>.Rproj</code>&#xFF09;&#x7BA1;&#x7406;&#x5F00;&#x53D1;&#x3002;</li>
+<li>&#x63A8;&#x8350;&#x7684;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF1A;<pre><code>project_name/
+&#x251C;&#x2500;&#x2500; data/       # &#x6570;&#x636E;&#x6587;&#x4EF6;
+&#x251C;&#x2500;&#x2500; R/          # R &#x811A;&#x672C;
+&#x251C;&#x2500;&#x2500; output/     # &#x8F93;&#x51FA;&#x6587;&#x4EF6;
+&#x251C;&#x2500;&#x2500; tests/      # &#x6D4B;&#x8BD5;&#x811A;&#x672C;
+&#x251C;&#x2500;&#x2500; README.md   # &#x9879;&#x76EE;&#x8BF4;&#x660E;
+&#x251C;&#x2500;&#x2500; .Rproj      # RStudio &#x9879;&#x76EE;&#x6587;&#x4EF6;
+</code></pre></li>
+</ul>
+<h3 id="62-&#x7248;&#x672C;&#x63A7;&#x5236;"><strong>6.2 &#x7248;&#x672C;&#x63A7;&#x5236;</strong></h3>
+<ul>
+<li>&#x4F7F;&#x7528; Git &#x7BA1;&#x7406;&#x4EE3;&#x7801;&#x7248;&#x672C;&#x3002;</li>
+<li>&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x6E05;&#x6670;&#x3001;&#x7B80;&#x6D01;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code>&#x6DFB;&#x52A0;&#x6570;&#x636E;&#x6E05;&#x6D17;&#x6A21;&#x5757;
+&#x4FEE;&#x590D;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;
+</code></pre></li>
+</ul>
+<hr>
+<h2 id="7-&#x6D4B;&#x8BD5;"><strong>7. &#x6D4B;&#x8BD5;</strong></h2>
+<ul>
+<li><p>&#x4F7F;&#x7528; <code>testthat</code> &#x5305;&#x7F16;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF0C;&#x786E;&#x4FDD;&#x51FD;&#x6570;&#x6B63;&#x786E;&#x6027;&#xFF1A;</p>
+<pre><code class="lang-r"><span class="hljs-keyword">library</span>(testthat)
+
+test_that(<span class="hljs-string">&quot;compute_mean &#x8BA1;&#x7B97;&#x6B63;&#x786E;&quot;</span>, {
+  expect_equal(compute_mean(c(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)), <span class="hljs-number">2</span>)
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="8-&#x4EE3;&#x7801;&#x6027;&#x80FD;&#x4F18;&#x5316;"><strong>8. &#x4EE3;&#x7801;&#x6027;&#x80FD;&#x4F18;&#x5316;</strong></h2>
+<ul>
+<li><p>&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x77E2;&#x91CF;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x907F;&#x514D;&#x663E;&#x5F0F;&#x5FAA;&#x73AF;&#xFF1A;</p>
+<pre><code class="lang-r"><span class="hljs-comment"># &#x4E0D;&#x63A8;&#x8350;</span>
+result &lt;- numeric(length(x))
+<span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> seq_along(x)) {
+  result[i] &lt;- x[i]^<span class="hljs-number">2</span>
+}
+
+<span class="hljs-comment"># &#x63A8;&#x8350;</span>
+result &lt;- x^<span class="hljs-number">2</span>
+</code></pre>
+</li>
+<li><p>&#x5728;&#x9700;&#x8981;&#x4F18;&#x5316;&#x6027;&#x80FD;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528; <code>data.table</code> &#x6216; <code>Rcpp</code>&#x3002;</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-&#x53EF;&#x89C6;&#x5316;"><strong>9. &#x53EF;&#x89C6;&#x5316;</strong></h2>
+<ul>
+<li>&#x4F7F;&#x7528;&#x4E00;&#x81F4;&#x7684;&#x6837;&#x5F0F;&#x548C;&#x4E3B;&#x9898;&#xFF0C;&#x5982; <code>ggplot2</code> &#x4E2D;&#x7EDF;&#x4E00;&#x8BBE;&#x7F6E;&#x4E3B;&#x9898;&#xFF1A;<pre><code class="lang-r"><span class="hljs-keyword">library</span>(ggplot2)
+ggplot(data, aes(x, y)) +
+  geom_point() +
+  theme_minimal()
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="10-&#x6587;&#x6863;&#x548C;&#x534F;&#x4F5C;"><strong>10. &#x6587;&#x6863;&#x548C;&#x534F;&#x4F5C;</strong></h2>
+<ul>
+<li>&#x4F7F;&#x7528; <code>roxygen2</code> &#x751F;&#x6210;&#x6587;&#x6863;&#x3002;</li>
+<li>&#x7F16;&#x5199;&#x9879;&#x76EE;&#x8BF4;&#x660E;&#x6587;&#x4EF6;&#xFF08;&#x5982; <code>README.md</code>&#xFF09;&#x6765;&#x89E3;&#x91CA;&#x9879;&#x76EE;&#x76EE;&#x7684;&#x3001;&#x4F9D;&#x8D56;&#x3001;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x7B49;&#x3002;</li>
+</ul>
+<hr>
 
                                 
                                 </section>
@@ -477,7 +638,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"R语言编码规范","level":"1.3.13","depth":2,"next":{"title":"Matlab编码规范","level":"1.3.14","depth":2,"path":"Matlab编码规范.md","ref":"Matlab编码规范.md","articles":[]},"previous":{"title":"Docker开发规范","level":"1.3.12","depth":2,"path":"Docker开发规范.md","ref":"Docker开发规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","-search","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"shortName":"algorithm4bill"},"github":{"url":"https://github.com/billryan/algorithm-exercise"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"algolia":{"index":"algorithm","applicationID":"9YBMOZR89J","publicKey":"5860a3e55ee72831917b1b9e2a4649ca","freeAccount":"true"},"richquotes":{"todos":true},"highlight":{},"ga":{"token":"UA-32317667-7"},"edit-link":{"base":"https://github.com/billryan/algorithm-exercise/edit/master","label":{"en":"Edit Page","zh-hans":"编辑此页","zh-tw":"編輯此頁"}},"sitemap2":{"hostname":"http://algorithm.yuanbin.me/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"feed":{"title":"Data Structure and Algorithm notes","description":"Data Structure and Algorithm notes/数据结构与算法学习笔记/leetcode/lintcode 题解","hostname":"https://algorithm.yuanbin.me","author":"billryan","categories":["programming","algorithm","leetcode"]}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"generate":"site","variables":{},"title":"ZhiZhouDevelopmentSpecification","language":"zh-cn","gitbook":"*","description":"芝舟开发规范"},"file":{"path":"R语言编码规范.md","mtime":"2024-12-10T07:16:52.031Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-10T07:17:15.050Z"},"basePath":".","book":{"language":"zh-cn"}});
+            gitbook.page.hasChanged({"page":{"title":"R语言编码规范","level":"1.3.13","depth":2,"next":{"title":"Matlab编码规范","level":"1.3.14","depth":2,"path":"Matlab编码规范.md","ref":"Matlab编码规范.md","articles":[]},"previous":{"title":"Docker开发规范","level":"1.3.12","depth":2,"path":"Docker开发规范.md","ref":"Docker开发规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","-search","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"shortName":"algorithm4bill"},"github":{"url":"https://github.com/billryan/algorithm-exercise"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"algolia":{"index":"algorithm","applicationID":"9YBMOZR89J","publicKey":"5860a3e55ee72831917b1b9e2a4649ca","freeAccount":"true"},"richquotes":{"todos":true},"highlight":{},"ga":{"token":"UA-32317667-7"},"edit-link":{"base":"https://github.com/billryan/algorithm-exercise/edit/master","label":{"en":"Edit Page","zh-hans":"编辑此页","zh-tw":"編輯此頁"}},"sitemap2":{"hostname":"http://algorithm.yuanbin.me/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"feed":{"title":"Data Structure and Algorithm notes","description":"Data Structure and Algorithm notes/数据结构与算法学习笔记/leetcode/lintcode 题解","hostname":"https://algorithm.yuanbin.me","author":"billryan","categories":["programming","algorithm","leetcode"]}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"generate":"site","variables":{},"title":"ZhiZhouDevelopmentSpecification","language":"zh-cn","gitbook":"*","description":"芝舟开发规范"},"file":{"path":"R语言编码规范.md","mtime":"2024-12-13T08:31:01.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-13T08:31:24.693Z"},"basePath":".","book":{"language":"zh-cn"}});
         });
     </script>
 </div>

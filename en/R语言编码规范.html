@@ -1,0 +1,661 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>R Language Coding Standards · ZhiZhouDevelopmentSpecification</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Matlab编码规范.html" />
+    
+    
+    <link rel="prev" href="Docker开发规范.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="基础.html">
+            
+                <a href="基础.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="software/windows/install-windows.md">
+            
+                <span>
+            
+                    
+                    System Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="software/windows/software-list.md">
+            
+                <span>
+            
+                    
+                    Common Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="software/README.md">
+            
+                <span>
+            
+                    
+                    Development Specifications
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Java开发规范.html">
+            
+                <a href="Java开发规范.html">
+            
+                    
+                    Java Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android开发规范.html">
+            
+                <a href="Android开发规范.html">
+            
+                    
+                    Android Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Flutter开发规范.html">
+            
+                <a href="Flutter开发规范.html">
+            
+                    
+                    Flutter Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Python开发规范.html">
+            
+                <a href="Python开发规范.html">
+            
+                    
+                    Python Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="数据库设计规范.html">
+            
+                <a href="数据库设计规范.html">
+            
+                    
+                    Database Design Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Nodejs开发规范.html">
+            
+                <a href="Nodejs开发规范.html">
+            
+                    
+                    Nodejs Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="PHP开发规范.html">
+            
+                <a href="PHP开发规范.html">
+            
+                    
+                    PHP Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="C">
+            
+                <span>
+            
+                    
+                    C# Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="Go开发规范.html">
+            
+                <a href="Go开发规范.html">
+            
+                    
+                    Go Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Ruby开发规范.html">
+            
+                <a href="Ruby开发规范.html">
+            
+                    
+                    Ruby Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="Shell开发规范.html">
+            
+                <a href="Shell开发规范.html">
+            
+                    
+                    Shell Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Docker开发规范.html">
+            
+                <a href="Docker开发规范.html">
+            
+                    
+                    Docker Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.13" data-path="R语言编码规范.html">
+            
+                <a href="R语言编码规范.html">
+            
+                    
+                    R Language Coding Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="Matlab编码规范.html">
+            
+                <a href="Matlab编码规范.html">
+            
+                    
+                    Matlab Coding Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="VB开发规范.html">
+            
+                <a href="VB开发规范.html">
+            
+                    
+                    VB Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    [Appendices]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../zh-cn/README.md">
+            
+                <span>
+            
+                    
+                    Chinese and English Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="更新说明.html">
+            
+                <a href="更新说明.html">
+            
+                    
+                    Version Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="关于我们.html">
+            
+                <a href="关于我们.html">
+            
+                    
+                    About Us
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >R Language Coding Standards</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="r-programming-development-specifications">R Programming Development Specifications</h1>
+<hr>
+<h2 id="1-code-structure-and-formatting"><strong>1. Code Structure and Formatting</strong></h2>
+<h3 id="11-indentation"><strong>1.1 Indentation</strong></h3>
+<ul>
+<li>Use 2 spaces for indentation, avoid tabs.</li>
+<li>Keep the line length within <strong>80-100 characters</strong>.</li>
+</ul>
+<h3 id="12-spacing"><strong>1.2 Spacing</strong></h3>
+<ul>
+<li>Add spaces around operators (e.g., <code>=</code>, <code>&lt;-</code>, <code>+</code>), such as:<pre><code class="lang-r">x &lt;- <span class="hljs-number">10</span>
+y &lt;- x + <span class="hljs-number">5</span>
+</code></pre>
+</li>
+<li>Do not add spaces between function names and parentheses when calling functions, such as:<pre><code class="lang-r">mean(x)
+</code></pre>
+</li>
+</ul>
+<h3 id="13-comments"><strong>1.3 Comments</strong></h3>
+<ul>
+<li>Use <code>#</code> for single-line comments and add a space after the symbol, such as:<pre><code class="lang-r"><span class="hljs-comment"># This is a comment</span>
+x &lt;- <span class="hljs-number">42</span>  <span class="hljs-comment"># Variable assignment</span>
+</code></pre>
+</li>
+<li>For longer comments, separate them with <code>#</code> lines, such as:<pre><code class="lang-r"><span class="hljs-comment"># ----------------------</span>
+<span class="hljs-comment"># Data Cleaning Steps</span>
+<span class="hljs-comment"># ----------------------</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="2-naming-conventions"><strong>2. Naming Conventions</strong></h2>
+<h3 id="21-variable-and-function-naming"><strong>2.1 Variable and Function Naming</strong></h3>
+<ul>
+<li>Use <strong>lowercase letters and underscores</strong> (snake_case), such as:<pre><code class="lang-r">average_score &lt;- <span class="hljs-number">85.5</span>
+compute_mean &lt;- <span class="hljs-keyword">function</span>(x) { mean(x) }
+</code></pre>
+</li>
+</ul>
+<h3 id="22-constants"><strong>2.2 Constants</strong></h3>
+<ul>
+<li>Use uppercase letters with underscores between words, such as:<pre><code class="lang-r">PI &lt;- <span class="hljs-number">3.14159</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="23-file-and-script-naming"><strong>2.3 File and Script Naming</strong></h3>
+<ul>
+<li>Use descriptive names following snake_case, such as:<pre><code>data_cleaning.R
+model_training.R
+</code></pre></li>
+</ul>
+<hr>
+<h2 id="3-function-design"><strong>3. Function Design</strong></h2>
+<h3 id="31-parameters"><strong>3.1 Parameters</strong></h3>
+<ul>
+<li>Function parameter names should be meaningful. Avoid using single-letter names (like <code>x</code>), unless appropriate in a mathematical or statistical context.</li>
+<li>Keep parameter lists clear and concise, avoiding too many parameters.</li>
+</ul>
+<h3 id="32-return-values"><strong>3.2 Return Values</strong></h3>
+<ul>
+<li>Functions should return a single, easily understandable data structure like a vector, list, or data frame.</li>
+<li>Avoid side effects (e.g., directly modifying global variables within functions).</li>
+</ul>
+<h3 id="33-documentation"><strong>3.3 Documentation</strong></h3>
+<ul>
+<li>Each function should include documentation comments, describing its functionality, parameters, return values, etc.:<pre><code class="lang-r"><span class="hljs-comment">#&apos; Compute the mean of a vector</span>
+<span class="hljs-comment">#&apos; </span>
+<span class="hljs-comment">#&apos; @param x Numeric vector</span>
+<span class="hljs-comment">#&apos; @return Numeric value, the mean of the vector</span>
+<span class="hljs-comment">#&apos; @examples</span>
+<span class="hljs-comment">#&apos; compute_mean(c(1, 2, 3))</span>
+compute_mean &lt;- <span class="hljs-keyword">function</span>(x) {
+  mean(x)
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="4-data-processing"><strong>4. Data Processing</strong></h2>
+<ul>
+<li>Avoid hardcoding (e.g., manually specifying column names or indices); use functions to retrieve them dynamically.</li>
+<li>Prefer using <code>tidyverse</code> packages (like <code>dplyr</code> and <code>ggplot2</code>) for data processing, as they result in cleaner and more readable code.</li>
+</ul>
+<hr>
+<h2 id="5-error-handling"><strong>5. Error Handling</strong></h2>
+<ul>
+<li>Handle exceptions within functions (e.g., parameter checks):<pre><code class="lang-r">compute_mean &lt;- <span class="hljs-keyword">function</span>(x) {
+  <span class="hljs-keyword">if</span> (!is.numeric(x)) {
+    <span class="hljs-keyword">stop</span>(<span class="hljs-string">&quot;Parameter x must be a numeric vector&quot;</span>)
+  }
+  mean(x)
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="6-project-management"><strong>6. Project Management</strong></h2>
+<h3 id="61-project-structure"><strong>6.1 Project Structure</strong></h3>
+<ul>
+<li>Use RStudio projects (<code>.Rproj</code>) to manage development.</li>
+<li>Recommended directory structure for the project:<pre><code>project_name/
+&#x251C;&#x2500;&#x2500; data/       # Data files
+&#x251C;&#x2500;&#x2500; R/          # R scripts
+&#x251C;&#x2500;&#x2500; output/     # Output files
+&#x251C;&#x2500;&#x2500; tests/      # Test scripts
+&#x251C;&#x2500;&#x2500; README.md   # Project description
+&#x251C;&#x2500;&#x2500; .Rproj      # RStudio project file
+</code></pre></li>
+</ul>
+<h3 id="62-version-control"><strong>6.2 Version Control</strong></h3>
+<ul>
+<li>Use Git for version control.</li>
+<li>Commit messages should be clear and concise, such as:<pre><code>Add data cleaning module
+Fix bug in model training
+</code></pre></li>
+</ul>
+<hr>
+<h2 id="7-testing"><strong>7. Testing</strong></h2>
+<ul>
+<li><p>Use the <code>testthat</code> package to write unit tests and ensure function correctness:</p>
+<pre><code class="lang-r"><span class="hljs-keyword">library</span>(testthat)
+
+test_that(<span class="hljs-string">&quot;compute_mean works correctly&quot;</span>, {
+  expect_equal(compute_mean(c(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)), <span class="hljs-number">2</span>)
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="8-code-optimization"><strong>8. Code Optimization</strong></h2>
+<ul>
+<li><p>Prefer vectorized operations over explicit loops:</p>
+<pre><code class="lang-r"><span class="hljs-comment"># Not recommended</span>
+result &lt;- numeric(length(x))
+<span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> seq_along(x)) {
+  result[i] &lt;- x[i]^<span class="hljs-number">2</span>
+}
+
+<span class="hljs-comment"># Recommended</span>
+result &lt;- x^<span class="hljs-number">2</span>
+</code></pre>
+</li>
+<li><p>When performance is a concern, consider using <code>data.table</code> or <code>Rcpp</code>.</p>
+</li>
+</ul>
+<hr>
+<h2 id="9-visualization"><strong>9. Visualization</strong></h2>
+<ul>
+<li>Use consistent styles and themes, such as setting a unified theme in <code>ggplot2</code>:<pre><code class="lang-r"><span class="hljs-keyword">library</span>(ggplot2)
+ggplot(data, aes(x, y)) +
+  geom_point() +
+  theme_minimal()
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="10-documentation-and-collaboration"><strong>10. Documentation and Collaboration</strong></h2>
+<ul>
+<li>Use <code>roxygen2</code> to generate documentation.</li>
+<li>Write project description files (e.g., <code>README.md</code>) to explain project goals, dependencies, usage, etc.</li>
+</ul>
+<hr>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Docker开发规范.html" class="navigation navigation-prev " aria-label="Previous page: Docker Development Specifications">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Matlab编码规范.html" class="navigation navigation-next " aria-label="Next page: Matlab Coding Standards">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"R Language Coding Standards","level":"1.3.13","depth":2,"next":{"title":"Matlab Coding Standards","level":"1.3.14","depth":2,"path":"Matlab编码规范.md","ref":"Matlab编码规范.md","articles":[]},"previous":{"title":"Docker Development Specifications","level":"1.3.12","depth":2,"path":"Docker开发规范.md","ref":"Docker开发规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","-search","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"shortName":"algorithm4bill"},"github":{"url":"https://github.com/billryan/algorithm-exercise"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"algolia":{"index":"algorithm","applicationID":"9YBMOZR89J","publicKey":"5860a3e55ee72831917b1b9e2a4649ca","freeAccount":"true"},"richquotes":{"todos":true},"highlight":{},"ga":{"token":"UA-32317667-7"},"edit-link":{"base":"https://github.com/billryan/algorithm-exercise/edit/master","label":{"en":"Edit Page","zh-hans":"编辑此页","zh-tw":"編輯此頁"}},"sitemap2":{"hostname":"http://algorithm.yuanbin.me/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"feed":{"title":"Data Structure and Algorithm notes","description":"Data Structure and Algorithm notes/数据结构与算法学习笔记/leetcode/lintcode 题解","hostname":"https://algorithm.yuanbin.me","author":"billryan","categories":["programming","algorithm","leetcode"]}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"generate":"site","variables":{},"title":"ZhiZhouDevelopmentSpecification","language":"en","gitbook":"*","description":"芝舟开发规范"},"file":{"path":"R语言编码规范.md","mtime":"2024-12-13T08:31:01.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-13T08:31:24.693Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

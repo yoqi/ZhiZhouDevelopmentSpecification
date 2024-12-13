@@ -1,0 +1,917 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Flutter Development Specifications · ZhiZhouDevelopmentSpecification</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Python开发规范.html" />
+    
+    
+    <link rel="prev" href="Android开发规范.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="基础.html">
+            
+                <a href="基础.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="software/windows/install-windows.md">
+            
+                <span>
+            
+                    
+                    System Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="software/windows/software-list.md">
+            
+                <span>
+            
+                    
+                    Common Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="software/README.md">
+            
+                <span>
+            
+                    
+                    Development Specifications
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Java开发规范.html">
+            
+                <a href="Java开发规范.html">
+            
+                    
+                    Java Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android开发规范.html">
+            
+                <a href="Android开发规范.html">
+            
+                    
+                    Android Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="Flutter开发规范.html">
+            
+                <a href="Flutter开发规范.html">
+            
+                    
+                    Flutter Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Python开发规范.html">
+            
+                <a href="Python开发规范.html">
+            
+                    
+                    Python Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="数据库设计规范.html">
+            
+                <a href="数据库设计规范.html">
+            
+                    
+                    Database Design Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Nodejs开发规范.html">
+            
+                <a href="Nodejs开发规范.html">
+            
+                    
+                    Nodejs Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="PHP开发规范.html">
+            
+                <a href="PHP开发规范.html">
+            
+                    
+                    PHP Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="C">
+            
+                <span>
+            
+                    
+                    C# Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="Go开发规范.html">
+            
+                <a href="Go开发规范.html">
+            
+                    
+                    Go Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Ruby开发规范.html">
+            
+                <a href="Ruby开发规范.html">
+            
+                    
+                    Ruby Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="Shell开发规范.html">
+            
+                <a href="Shell开发规范.html">
+            
+                    
+                    Shell Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Docker开发规范.html">
+            
+                <a href="Docker开发规范.html">
+            
+                    
+                    Docker Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="R语言编码规范.html">
+            
+                <a href="R语言编码规范.html">
+            
+                    
+                    R Language Coding Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="Matlab编码规范.html">
+            
+                <a href="Matlab编码规范.html">
+            
+                    
+                    Matlab Coding Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="VB开发规范.html">
+            
+                <a href="VB开发规范.html">
+            
+                    
+                    VB Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    [Appendices]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../zh-cn/README.md">
+            
+                <span>
+            
+                    
+                    Chinese and English Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="更新说明.html">
+            
+                <a href="更新说明.html">
+            
+                    
+                    Version Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="关于我们.html">
+            
+                <a href="关于我们.html">
+            
+                    
+                    About Us
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Flutter Development Specifications</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="flutter-development-guidelines">Flutter Development Guidelines</h1>
+<p>In the process of years of Flutter development, the following development guidelines have been summarized. Following these guidelines helps avoid most common mistakes. Additionally, using the same set of standards within a team ensures good readability of the code.</p>
+<h2 id="project-structure">Project Structure</h2>
+<p>Flutter code can be used to develop Android and iOS applications, and with Flutter 2.0, it also supports compiling for web, Windows, Linux, macOS, and other systems. Due to the randomness of Flutter plugins, try to minimize their use. Before using a plugin, check whether its source code is safe and efficient. If not, consider implementing it yourself.</p>
+<p>Flutter Project Structure:</p>
+<h2 id="code-style">Code Style</h2>
+<h3 id="three-types-of-identifiers">Three Types of Identifiers</h3>
+<h4 id="upper-camel-case">Upper Camel Case</h4>
+<p>For classes, enums, typedefs, and type parameters:</p>
+<pre><code>  class SliderMenu { ... }
+
+  class HttpRequest { ... }
+
+  typedef Predicate = bool Function&lt;T&gt;(T value);
+</code></pre><p>Including classes used for metadata annotations:</p>
+<pre><code>  class Foo {
+    const Foo([arg]);
+  }
+
+  @Foo(anArg)
+  class A { ... }
+
+  @Foo()
+  class B { ... }
+</code></pre><h4 id="use-lowercase-with-underscores-for-libraries-and-source-file-names">Use lowercase with underscores for libraries and source file names</h4>
+<p>Since Windows file systems are case-insensitive, in Flutter, Python, and other environments, source code file (library) names should be in lowercase with underscores.</p>
+<pre><code>  library peg_parser.source_scanner;
+
+  import &apos;file_system.dart&apos;;
+  import &apos;slider_menu.dart&apos;;
+</code></pre><p>Avoid this style:</p>
+<pre><code>  library pegparser.SourceScanner;
+
+  import &apos;file-system.dart&apos;;
+  import &apos;SliderMenu.dart&apos;;
+</code></pre><h4 id="use-lowercase-with-underscores-for-import-prefixes">Use lowercase with underscores for import prefixes</h4>
+<pre><code>  import &apos;dart:math&apos; as math;
+  import &apos;package:angular_components/angular_components&apos;
+      as angular_components;
+  import &apos;package:js/js.dart&apos; as js;
+</code></pre><p>Avoid this style:</p>
+<pre><code>  import &apos;dart:math&apos; as Math;
+  import &apos;package:angular_components/angular_components&apos;
+      as angularComponents;
+  import &apos;package:js/js.dart&apos; as JS;
+</code></pre><h4 id="use-lowercase-camel-case-for-other-identifiers">Use lowercase camel case for other identifiers</h4>
+<pre><code>  var item;
+
+  HttpRequest httpRequest;
+
+  void align(bool clearItems) {
+    // ...
+  }
+</code></pre><h4 id="prefer-lowercase-camel-case-for-constant-names">Prefer lowercase camel case for constant names</h4>
+<pre><code>  const pi = 3.14;
+  const defaultTimeout = 1000;
+  final urlScheme = RegExp(&apos;^([a-z]+):&apos;);
+
+  class Dice {
+    static final numberGenerator = Random();
+  }
+</code></pre><p>Avoid this style:</p>
+<pre><code>  const PI = 3.14;
+  const DefaultTimeout = 1000;
+  final URL_SCHEME = RegExp(&apos;^([a-z]+):&apos;);
+
+  class Dice {
+    static final NUMBER_GENERATOR = Random();
+  }
+</code></pre><h4 id="avoid-prefix-letters">Avoid prefix letters</h4>
+<p>Since Dart can tell you the type, scope, mutability, and other attributes of a declaration, there is no need to encode these properties in the identifier name.</p>
+<pre><code>  defaultTimeout
+</code></pre><p>Avoid this style:</p>
+<pre><code>  kDefaultTimeout
+</code></pre><h3 id="sorting">Sorting</h3>
+<p>To keep your files tidy, there are guidelines on how imports should be ordered. Each &quot;section&quot; should be separated by a blank line.</p>
+<h4 id="import-dart-libraries-before-others">Import Dart libraries before others</h4>
+<pre><code>  import &apos;dart:async&apos;;
+  import &apos;dart:html&apos;;
+
+  import &apos;package:bar/bar.dart&apos;;
+  import &apos;package:foo/foo.dart&apos;;
+</code></pre><h4 id="import-package-libraries-before-relative-imports">Import package libraries before relative imports</h4>
+<pre><code>  import &apos;package:bar/bar.dart&apos;;
+  import &apos;package:foo/foo.dart&apos;;
+
+  import &apos;util.dart&apos;;
+</code></pre><h4 id="third-party-package-imports-should-come-before-other-packages">Third-party package imports should come before other packages</h4>
+<pre><code>  import &apos;package:bar/bar.dart&apos;;
+  import &apos;package:foo/foo.dart&apos;;
+
+  import &apos;package:my_package/util.dart&apos;;
+</code></pre><h4 id="export-libraries-after-all-imports-in-a-separate-section">Export libraries after all imports in a separate section</h4>
+<pre><code>  import &apos;src/error.dart&apos;;
+  import &apos;src/foo_bar.dart&apos;;
+
+  export &apos;src/error.dart&apos;;
+</code></pre><p>Avoid this style:</p>
+<pre><code>  import &apos;src/error.dart&apos;;
+  export &apos;src/error.dart&apos;;
+  import &apos;src/foo_bar.dart&apos;;
+</code></pre><h3 id="always-use-braces-for-control-flow-structures">Always use braces for control flow structures</h3>
+<p>This avoids the &quot;dangling else&quot; problem.</p>
+<pre><code>  if (isWeekDay) {
+    print(&apos;Bike to work!&apos;);
+  } else {
+    print(&apos;Go dancing or read a book!&apos;);
+  }
+</code></pre><h4 id="exception">Exception</h4>
+<p>If an if statement has no else clause and the entire if and then body fit on one line, you can omit the braces if you prefer.</p>
+<pre><code>  if (arg == null) return defaultValue;
+</code></pre><p>If the body exceeds one line and needs to be split, use braces:</p>
+<pre><code>  if (overflowChars != other.overflowChars) {
+    return overflowChars &lt; other.overflowChars;
+  }
+</code></pre><p>Avoid this style:</p>
+<pre><code>  if (overflowChars != other.overflowChars)
+    return overflowChars &lt; other.overflowChars;
+</code></pre><h2 id="comments">Comments</h2>
+<h3 id="format-comments-like-sentences">Format comments like sentences</h3>
+<p>Unless it is a case-sensitive identifier, the first word should be capitalized. End all comments with a period (or &quot;!&quot; or &quot;?&quot;). This applies to all types of comments: doc comments, inline comments, and TODOs, even for short fragments of sentences.</p>
+<pre><code>  greet(name) {
+    // Assume we have a valid name.
+    print(&apos;Hi, $name!&apos;);
+  }
+</code></pre><p>Avoid this style:</p>
+<pre><code>  greet(name) {
+    /* Assume we have a valid name. */
+    print(&apos;Hi, $name!&apos;);
+  }
+</code></pre><p>You can use block comments (/&#x2026;/) to temporarily comment out a section of code, but all other comments should use <code>//</code>.</p>
+<h3 id="doc-comments">Doc Comments</h3>
+<p>Use <code>///</code> for documenting members and types.</p>
+<p>Use doc comments instead of regular comments so that <code>dartdoc</code> can find and generate documentation.</p>
+<pre><code>  /// The number of characters in this chunk when unsplit.
+  int get length =&gt; ...
+</code></pre><blockquote>
+<p>Due to historical reasons, Dartmouth College supports two styles of doc comments: <code>///</code> (&quot;C# style&quot;) and <code>/** ... */</code> (&quot;JavaDoc style&quot;). We prefer <code>///</code> because it is more compact. <code>/**</code> and <code>*/</code> introduce two empty lines in multi-line doc comments. In some cases, the <code>///</code> style is easier to read, especially when documenting lists with <code>-</code> bullet points.</p>
+</blockquote>
+<h3 id="consider-writing-doc-comments-for-private-apis">Consider writing doc comments for private APIs</h3>
+<p>Doc comments are not only for documenting public APIs used externally from a library. They also help understand private members that are called from other parts of the library.</p>
+<h4 id="start-doc-comments-with-a-brief-one-sentence-summary">Start doc comments with a brief one-sentence summary</h4>
+<p>Start the doc comment with a short, user-centric description, and end it with a period.</p>
+<pre><code>/// Deletes the file at [path] from the file system.
+void delete(String path) {
+  ...
+}
+</code></pre><p>Avoid this style:</p>
+<pre><code>
+
+</code></pre><h4 id="separate-the-first-sentence-of-a-doc-comment-into-its-own-paragraph">Separate the first sentence of a doc comment into its own paragraph</h4>
+<p>Add a blank line after the first sentence to separate it into its own paragraph.</p>
+<pre><code>  /// Deletes the file at [path].
+  ///
+  /// Throws an [IOError] if the file could not be found. Throws a
+  /// [PermissionError] if the file is present but could not be deleted.
+  void delete(String path) {
+    ...
+  }
+</code></pre><h2 id="fluttergo-usage-reference">Flutter_Go Usage Reference</h2>
+<h3 id="library-imports">Library Imports</h3>
+<p>In Flutter Go, when importing libraries from the <code>lib</code> directory, always use the package name to avoid excessive <code>../../</code> paths.</p>
+<pre><code>package:flutter_go/
+</code></pre><h3 id="string-usage">String Usage</h3>
+<h4 id="concatenate-adjacent-string-literals">Concatenate adjacent string literals</h4>
+<p>If two string literals are adjacent (not values, but actual references to string literals), avoid using <code>+</code> to concatenate them. This is a good way to create long strings, but not for single-line strings.</p>
+<pre><code>raiseAlarm(
+    &apos;ERROR: Parts of the spaceship are on fire. Other &apos;
+    &apos;parts are overrun by martians. Unclear which are which.&apos;);
+</code></pre><p>Avoid this style:</p>
+<pre><code>raiseAlarm(&apos;ERROR: Parts of the spaceship are on fire. Other &apos; +
+    &apos;parts are overrun by martians. Unclear which are which.&apos;);
+</code></pre><h4 id="prefer-using-template-strings">Prefer using template strings</h4>
+<pre><code>&apos;Hello, $name! You are ${year - birth} years old.&apos;;
+</code></pre><h4 id="avoid-using-braces-when-not-needed">Avoid using braces when not needed</h4>
+<pre><code>  &apos;Hi, $name!&apos;
+  &quot;Wear your wildest $decade&apos;s outfit.&quot;
+</code></pre><p>Avoid this style:</p>
+<pre><code>  &apos;Hello, &apos; + name + &apos;! You are &apos; + (year - birth).toString() + &apos; y...&apos;;
+</code></pre><p>Avoid this style:</p>
+<pre><code>  &apos;Hi, ${name}!&apos;
+  &quot;Wear your wildest ${decade}&apos;s outfit.&quot;
+</code></pre><h3 id="collections">Collections</h3>
+<h4 id="prefer-using-collection-literals">Prefer using collection literals</h4>
+<p>If you want to create a fixed-size list or other custom collection types, always use a literal constructor.</p>
+<pre><code>  var points = [];
+  var addresses = {};
+  var lines = &lt;Lines&gt;[];
+</code></pre><p>Avoid this style:</p>
+<pre><code>  var points = List();
+  var addresses = Map();
+</code></pre><h4 id="avoid-using-length-to-check-if-a-collection-is-empty">Avoid using <code>.length</code> to check if a collection is empty</h4>
+<pre><code>if (lunchBox.isEmpty) return &apos;so hungry...&apos;;
+if (words.isNotEmpty) return words.join(&apos; &apos;);
+</code></pre><p>Avoid this style:</p>
+<pre><code>  if (lunchBox.length == 0) return &apos;so hungry...&apos;;
+  if (!words.isEmpty) return words.join(&apos; &apos;);
+</code></pre><h4 id="consider-using-higher-order-methods-to-transform-sequences">Consider using higher-order methods to transform sequences</h4>
+<p>If you have a collection and want to generate a new modified collection, use <code>.map()</code>, <code>.where()</code>, and other convenient methods on Iterable as they are shorter and more declarative.</p>
+<pre><code>  var aquaticNames = animals
+      .where((animal) =&gt; animal.isAquatic)
+      .map((animal) =&gt; animal.name);
+</code></pre><p>Avoid using Iterable.forEach() with function literals</p>
+<p>In Dart, the conventional method to iterate over a sequence is to use loops.</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> person <span class="hljs-keyword">in</span> people) {
+  ...
+}
+</code></pre>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart">people.forEach((person) {
+  ...
+});
+</code></pre>
+<h4 id="do-not-use-listfrom-unless-you-intend-to-change-the-results-type">Do not use List.from() unless you intend to change the result&apos;s type</h4>
+<p>Given an iterable, there are two obvious methods to generate a new list containing the same elements.</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">var</span> copy1 = iterable.toList();
+<span class="hljs-keyword">var</span> copy2 = <span class="hljs-built_in">List</span>.from(iterable);
+</code></pre>
+<p>The obvious difference is that the first one is shorter. The important difference is that the first one retains the original type parameter.</p>
+<pre><code class="lang-dart"><span class="hljs-comment">// Creates a List&lt;int&gt;:</span>
+<span class="hljs-keyword">var</span> iterable = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+
+<span class="hljs-comment">// Prints &quot;List&lt;int&gt;&quot;:</span>
+<span class="hljs-built_in">print</span>(iterable.toList().runtimeType);
+</code></pre>
+<pre><code class="lang-dart"><span class="hljs-comment">// Creates a List&lt;int&gt;:</span>
+<span class="hljs-keyword">var</span> iterable = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+
+<span class="hljs-comment">// Prints &quot;List&lt;dynamic&gt;&quot;:</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">List</span>.from(iterable).runtimeType);
+</code></pre>
+<h3 id="parameter-usage">Parameter Usage</h3>
+<h4 id="use--to-separate-named-parameters-from-their-default-values">Use &apos;=&apos; to separate named parameters from their default values</h4>
+<p>Due to historical reasons, Dart allows both &quot;:&quot; and &quot;=&quot; as separators for specifying default values for parameters. To be consistent with optional positional parameters, use &quot;=&quot;.</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">void</span> insert(<span class="hljs-built_in">Object</span> item, {<span class="hljs-built_in">int</span> at = <span class="hljs-number">0</span>}) { ... }
+</code></pre>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">void</span> insert(<span class="hljs-built_in">Object</span> item, {<span class="hljs-built_in">int</span> at: <span class="hljs-number">0</span>}) { ... }
+</code></pre>
+<h4 id="do-not-use-explicit-default-values-of-null">Do not use explicit default values of null</h4>
+<p>If a parameter is optional and does not have a default value, the language implicitly uses null as the default value, so there is no need to write it.</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">void</span> error([<span class="hljs-built_in">String</span> message]) {
+  stderr.write(message ?? <span class="hljs-string">&apos;\n&apos;</span>);
+}
+</code></pre>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">void</span> error([<span class="hljs-built_in">String</span> message = <span class="hljs-keyword">null</span>]) {
+  stderr.write(message ?? <span class="hljs-string">&apos;\n&apos;</span>);
+}
+</code></pre>
+<h3 id="variables">Variables</h3>
+<h4 id="do-not-explicitly-initialize-variables-to-null">Do not explicitly initialize variables to null</h4>
+<p>In Dart, variables or fields that are not explicitly initialized are automatically initialized to null. Do not assign null unnecessarily.</p>
+<pre><code class="lang-dart">  <span class="hljs-built_in">int</span> _nextId;
+
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LazyId</span> </span>{
+    <span class="hljs-built_in">int</span> _id;
+
+    <span class="hljs-built_in">int</span> <span class="hljs-keyword">get</span> id {
+      <span class="hljs-keyword">if</span> (_nextId == <span class="hljs-keyword">null</span>) _nextId = <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">if</span> (_id == <span class="hljs-keyword">null</span>) _id = _nextId++;
+      <span class="hljs-keyword">return</span> _id;
+    }
+  }
+</code></pre>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart">  <span class="hljs-built_in">int</span> _nextId = <span class="hljs-keyword">null</span>;
+
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LazyId</span> </span>{
+    <span class="hljs-built_in">int</span> _id = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-built_in">int</span> <span class="hljs-keyword">get</span> id {
+      <span class="hljs-keyword">if</span> (_nextId == <span class="hljs-keyword">null</span>) _nextId = <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">if</span> (_id == <span class="hljs-keyword">null</span>) _id = _nextId++;
+      <span class="hljs-keyword">return</span> _id;
+    }
+  }
+</code></pre>
+<h4 id="avoid-storing-things-you-can-calculate">Avoid storing things you can calculate</h4>
+<p>When designing classes, you usually want to expose multiple views to the same underlying state. Usually, you will see code that calculates all views in the constructor, then stores them:</p>
+<p>The following style should be avoided:</p>
+<pre><code class="lang-dart">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+    <span class="hljs-built_in">num</span> radius;
+    <span class="hljs-built_in">num</span> area;
+    <span class="hljs-built_in">num</span> circumference;
+
+    Circle(<span class="hljs-built_in">num</span> radius)
+        : radius = radius,
+          area = pi * radius * radius,
+          circumference = pi * <span class="hljs-number">2.0</span> * radius;
+  }
+</code></pre>
+<p>Problems with the above code:</p>
+<ul>
+<li>Wastes memory</li>
+<li>Caching issues are invalid - how do you know when to recalculate the cache?</li>
+</ul>
+<p>The recommended style is as follows:</p>
+<pre><code class="lang-dart">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+    <span class="hljs-built_in">num</span> radius;
+
+    Circle(<span class="hljs-keyword">this</span>.radius);
+
+    <span class="hljs-built_in">num</span> <span class="hljs-keyword">get</span> area =&gt; pi * radius * radius;
+    <span class="hljs-built_in">num</span> <span class="hljs-keyword">get</span> circumference =&gt; pi * <span class="hljs-number">2.0</span> * radius;
+  }
+</code></pre>
+<h3 id="class-members">Class Members</h3>
+<h4 id="do-not-wrap-unnecessary-fields-in-getters-and-setters">Do not wrap unnecessary fields in getters and setters</h4>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+    <span class="hljs-keyword">var</span> _contents;
+    <span class="hljs-keyword">get</span> contents =&gt; _contents;
+    <span class="hljs-keyword">set</span> contents(value) {
+      _contents = value;
+    }
+  }
+</code></pre>
+<h4 id="prefer-using-final-fields-to-create-read-only-properties">Prefer using final fields to create read-only properties</h4>
+<p>Especially for <code>StatelessWidget</code></p>
+<h4 id="do-not-use-this-when-its-not-needed">Do not use <code>this</code> when it&apos;s not needed</h4>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+    <span class="hljs-keyword">var</span> value;
+
+    <span class="hljs-keyword">void</span> clear() {
+      <span class="hljs-keyword">this</span>.update(<span class="hljs-keyword">null</span>);
+    }
+
+    <span class="hljs-keyword">void</span> update(value) {
+      <span class="hljs-keyword">this</span>.value = value;
+    }
+  }
+</code></pre>
+<p>The recommended style is as follows:</p>
+<pre><code class="lang-dart">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+    <span class="hljs-keyword">var</span> value;
+
+    <span class="hljs-keyword">void</span> clear() {
+      update(<span class="hljs-keyword">null</span>);
+    }
+
+    <span class="hljs-keyword">void</span> update(value) {
+      <span class="hljs-keyword">this</span>.value = value;
+    }
+  }
+</code></pre>
+<h3 id="constructors">Constructors</h3>
+<h4 id="prefer-using-the-initializer-form">Prefer using the initializer form</h4>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+    <span class="hljs-built_in">num</span> x, y;
+    Point(<span class="hljs-built_in">num</span> x, <span class="hljs-built_in">num</span> y) {
+      <span class="hljs-keyword">this</span>.x = x;
+      <span class="hljs-keyword">this</span>.y = y;
+    }
+  }
+</code></pre>
+<p>The recommended style is as follows:</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+  <span class="hljs-built_in">num</span> x, y;
+  Point(<span class="hljs-keyword">this</span>.x, <span class="hljs-keyword">this</span>.y);
+}
+</code></pre>
+<h4 id="do-not-use-new">Do not use <code>new</code></h4>
+<p>Dart 2 makes the <code>new</code> keyword optional</p>
+<p>The recommended style is as follows:</p>
+<pre><code class="lang-dart">  Widget build(BuildContext context) {
+    <span class="hljs-keyword">return</span> Row(
+      children: [
+        RaisedButton(
+          child: Text(<span class="hljs-string">&apos;Increment&apos;</span>),
+        ),
+        Text(<span class="hljs-string">&apos;Click!&apos;</span>),
+      ],
+    );
+  }
+</code></pre>
+<p>The following style is not recommended:</p>
+<pre><code class="lang-dart">  Widget build(BuildContext context) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Row(
+      children: [
+        <span class="hljs-keyword">new</span> RaisedButton(
+          child: <span class="hljs-keyword">new</span> Text(<span class="hljs-string">&apos;Increment&apos;</span>),
+        ),
+        <span class="hljs-keyword">new</span> Text(<span class="hljs-string">&apos;Click!&apos;</span>),
+      ],
+    );
+  }
+</code></pre>
+<h3 id="asynchronous">Asynchronous</h3>
+<h4 id="prefer-using-asyncawait-over-raw-futures">Prefer using async/await over raw futures</h4>
+<p>The async/await syntax improves readability, allowing you to use all Dart control flow structures in asynchronous code.</p>
+<pre><code class="lang-dart">  Future&lt;<span class="hljs-built_in">int</span>&gt; countActivePlayers(<span class="hljs-built_in">String</span> teamName) <span class="hljs-keyword">async</span> {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">var</span> team = <span class="hljs-keyword">await</span> downloadTeam(teamName);
+      <span class="hljs-keyword">if</span> (team == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+      <span class="hljs-keyword">var</span> players = <span class="hljs-keyword">await</span> team.roster;
+      <span class="hljs-keyword">return</span> players.where((player) =&gt; player.isActive).length;
+    } <span class="hljs-keyword">catch</span> (e) {
+      log.error(e);
+      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+  }
+</code></pre>
+<h4 id="do-not-use-asynchronous-operations-when-they-are-not-necessary">Do not use asynchronous operations when they are not necessary</h4>
+<p>If you can omit asynchronous operations without changing the behavior of the function, then do so.</p>
+<pre><code class="lang-dart">  Future afterTwoThings(Future first, Future second) {
+    <span class="hljs-keyword">return</span> Future.wait([first, second]);
+  }
+</code></pre>
+<p>The following style is not recommended:</p>
+<p>```dart
+  Future afterTwoThings(Future first, Future second) async {
+    return Future.wait([first, second]);
+  }
+}</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Android开发规范.html" class="navigation navigation-prev " aria-label="Previous page: Android Development Specifications">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Python开发规范.html" class="navigation navigation-next " aria-label="Next page: Python Development Specifications">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Flutter Development Specifications","level":"1.3.3","depth":2,"next":{"title":"Python Development Specifications","level":"1.3.4","depth":2,"path":"Python开发规范.md","ref":"Python开发规范.md","articles":[]},"previous":{"title":"Android Development Specifications","level":"1.3.2","depth":2,"path":"Android开发规范.md","ref":"Android开发规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","-search","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"shortName":"algorithm4bill"},"github":{"url":"https://github.com/billryan/algorithm-exercise"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"algolia":{"index":"algorithm","applicationID":"9YBMOZR89J","publicKey":"5860a3e55ee72831917b1b9e2a4649ca","freeAccount":"true"},"richquotes":{"todos":true},"highlight":{},"ga":{"token":"UA-32317667-7"},"edit-link":{"base":"https://github.com/billryan/algorithm-exercise/edit/master","label":{"en":"Edit Page","zh-hans":"编辑此页","zh-tw":"編輯此頁"}},"sitemap2":{"hostname":"http://algorithm.yuanbin.me/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"feed":{"title":"Data Structure and Algorithm notes","description":"Data Structure and Algorithm notes/数据结构与算法学习笔记/leetcode/lintcode 题解","hostname":"https://algorithm.yuanbin.me","author":"billryan","categories":["programming","algorithm","leetcode"]}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"generate":"site","variables":{},"title":"ZhiZhouDevelopmentSpecification","language":"en","gitbook":"*","description":"芝舟开发规范"},"file":{"path":"Flutter开发规范.md","mtime":"2024-12-13T08:31:01.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-13T08:31:24.693Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

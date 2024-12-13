@@ -1,0 +1,618 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Nodejs Development Specifications · ZhiZhouDevelopmentSpecification</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PHP开发规范.html" />
+    
+    
+    <link rel="prev" href="数据库设计规范.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="基础.html">
+            
+                <a href="基础.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="software/windows/install-windows.md">
+            
+                <span>
+            
+                    
+                    System Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="software/windows/software-list.md">
+            
+                <span>
+            
+                    
+                    Common Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="software/README.md">
+            
+                <span>
+            
+                    
+                    Development Specifications
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Java开发规范.html">
+            
+                <a href="Java开发规范.html">
+            
+                    
+                    Java Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Android开发规范.html">
+            
+                <a href="Android开发规范.html">
+            
+                    
+                    Android Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Flutter开发规范.html">
+            
+                <a href="Flutter开发规范.html">
+            
+                    
+                    Flutter Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Python开发规范.html">
+            
+                <a href="Python开发规范.html">
+            
+                    
+                    Python Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="数据库设计规范.html">
+            
+                <a href="数据库设计规范.html">
+            
+                    
+                    Database Design Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="Nodejs开发规范.html">
+            
+                <a href="Nodejs开发规范.html">
+            
+                    
+                    Nodejs Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="PHP开发规范.html">
+            
+                <a href="PHP开发规范.html">
+            
+                    
+                    PHP Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="C">
+            
+                <span>
+            
+                    
+                    C# Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="Go开发规范.html">
+            
+                <a href="Go开发规范.html">
+            
+                    
+                    Go Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Ruby开发规范.html">
+            
+                <a href="Ruby开发规范.html">
+            
+                    
+                    Ruby Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="Shell开发规范.html">
+            
+                <a href="Shell开发规范.html">
+            
+                    
+                    Shell Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Docker开发规范.html">
+            
+                <a href="Docker开发规范.html">
+            
+                    
+                    Docker Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="R语言编码规范.html">
+            
+                <a href="R语言编码规范.html">
+            
+                    
+                    R Language Coding Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="Matlab编码规范.html">
+            
+                <a href="Matlab编码规范.html">
+            
+                    
+                    Matlab Coding Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="VB开发规范.html">
+            
+                <a href="VB开发规范.html">
+            
+                    
+                    VB Development Specifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    [Appendices]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../zh-cn/README.md">
+            
+                <span>
+            
+                    
+                    Chinese and English Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="更新说明.html">
+            
+                <a href="更新说明.html">
+            
+                    
+                    Version Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="关于我们.html">
+            
+                <a href="关于我们.html">
+            
+                    
+                    About Us
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Nodejs Development Specifications</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nodejs-development-specification">Node.js Development Specification</h1>
+<p>The Node.js development specification covers various aspects, including code style, module structure, error handling, performance optimization, etc. Here are some common development guidelines:</p>
+<h3 id="1-code-style-guidelines">1. <strong>Code Style Guidelines</strong></h3>
+<ul>
+<li><strong>Indentation</strong>: Use 2 spaces for indentation instead of tabs.</li>
+<li><strong>Line Length</strong>: Avoid overly long lines of code. The recommended maximum line length is 80-100 characters.</li>
+<li><strong>Spaces and Parentheses</strong>: No spaces between the control structures like <code>if</code>, <code>for</code>, <code>while</code>, etc., and their conditions. For example:<pre><code class="lang-js"><span class="hljs-keyword">if</span> (condition) {
+    <span class="hljs-comment">// do something</span>
+}
+</code></pre>
+</li>
+<li><strong>Naming Conventions</strong>:<ul>
+<li>Variables, functions, parameters, etc., should follow camelCase naming (e.g., <code>myVariable</code>, <code>getUserInfo</code>).</li>
+<li>Constants should use uppercase letters with underscores (UPPER_SNAKE_CASE), e.g., <code>MAX_LIMIT</code>.</li>
+<li>Classes and constructors should use PascalCase (e.g., <code>UserService</code>).</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-modularization-and-directory-structure">2. <strong>Modularization and Directory Structure</strong></h3>
+<ul>
+<li><strong>Module Separation</strong>: Split different functionalities into separate modules to avoid having a large monolithic module.</li>
+<li><p><strong>Module Exports</strong>: Prefer using ES6 <code>export</code> and <code>import</code> syntax, but in Node.js, CommonJS <code>module.exports</code> and <code>require</code> are still the standard.</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">a, b</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b;
+};
+</code></pre>
+</li>
+<li><p><strong>Directory Structure</strong>: Maintain a clear directory hierarchy. A typical structure might look like this:</p>
+<pre><code>/src
+  /controllers
+  /models
+  /routes
+  /middlewares
+  /utils
+/tests
+/config
+/public
+</code></pre></li>
+</ul>
+<h3 id="3-error-handling">3. <strong>Error Handling</strong></h3>
+<ul>
+<li><strong>Unified Error Handling</strong>: Use a consistent error-handling mechanism to avoid repetitive error-handling code in each function.<pre><code class="lang-js"><span class="hljs-keyword">try</span> {
+    <span class="hljs-comment">// some code</span>
+} <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-built_in">console</span>.error(err.message);
+    res.status(<span class="hljs-number">500</span>).send({ error: <span class="hljs-string">&apos;Something went wrong!&apos;</span> });
+}
+</code></pre>
+</li>
+<li><strong>Custom Errors</strong>: Create custom error classes as per business needs.<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Error</span> </span>{
+    <span class="hljs-keyword">constructor</span>(message, statusCode) {
+        <span class="hljs-keyword">super</span>(message);
+        <span class="hljs-keyword">this</span>.statusCode = statusCode;
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="4-asynchronous-programming">4. <strong>Asynchronous Programming</strong></h3>
+<ul>
+<li><p><strong>Callback Functions</strong>: Avoid callback hell. Use <code>Promise</code> or <code>async/await</code> to handle asynchronous operations.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Using async/await</span>
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fetchData</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">&apos;https://api.example.com&apos;</span>);
+        <span class="hljs-keyword">return</span> result.json();
+    } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-built_in">console</span>.error(err);
+    }
+}
+</code></pre>
+</li>
+<li><p><strong>Error Handling</strong>: Use <code>try-catch</code> to handle errors in asynchronous code, especially with <code>async/await</code>.</p>
+</li>
+<li><p><strong>Promise Chains</strong>: Avoid deeply nested Promise chains. Keep the code clean.</p>
+</li>
+</ul>
+<h3 id="5-performance-optimization">5. <strong>Performance Optimization</strong></h3>
+<ul>
+<li><strong>Avoid Blocking the Event Loop</strong>: Avoid long-running synchronous code, especially I/O operations. Use asynchronous methods like <code>fs.readFile()</code> instead of <code>fs.readFileSync()</code>.</li>
+<li><strong>Caching</strong>: Consider using caching mechanisms (like Redis) for frequently accessed data or operations to improve performance.</li>
+<li><strong>Memory Management</strong>: Regularly clean up unused objects to prevent memory leaks.</li>
+</ul>
+<h3 id="6-dependency-management">6. <strong>Dependency Management</strong></h3>
+<ul>
+<li><strong>package.json Management</strong>: Every project should have a <code>package.json</code> file to record project dependencies and scripts.</li>
+<li><strong>Dependency Version Management</strong>: Use <code>npm</code> or <code>yarn</code> lock files (<code>package-lock.json</code> or <code>yarn.lock</code>) to ensure consistent versions.</li>
+<li><strong>Install Only Production Dependencies</strong>: In production environments, use the <code>--production</code> flag to avoid installing development dependencies.<pre><code class="lang-bash">npm install --production
+</code></pre>
+</li>
+</ul>
+<h3 id="7-log-management">7. <strong>Log Management</strong></h3>
+<ul>
+<li><strong>Unified Logging Guidelines</strong>: Use third-party logging libraries (like <code>winston</code>, <code>pino</code>, etc.) for log management instead of <code>console.log</code>.</li>
+<li><strong>Log Levels</strong>: Adopt different log levels (e.g., <code>info</code>, <code>warn</code>, <code>error</code>) to distinguish between various importance levels.</li>
+<li><strong>Log Format</strong>: Maintain a consistent log format that includes timestamps, log levels, and messages.</li>
+</ul>
+<h3 id="8-testing">8. <strong>Testing</strong></h3>
+<ul>
+<li><strong>Unit Testing</strong>: Write unit tests for critical functions. Recommended testing frameworks include <code>Jest</code> or <code>Mocha</code>.</li>
+<li><strong>Integration Testing</strong>: Test interactions between modules.</li>
+<li><strong>End-to-End Testing</strong>: Ensure overall system functionality.</li>
+</ul>
+<h3 id="9-security">9. <strong>Security</strong></h3>
+<ul>
+<li><strong>Prevent SQL Injection</strong>: Use ORM tools (like Sequelize, Mongoose) or parameterized queries to prevent SQL injection attacks.</li>
+<li><strong>XSS and CSRF</strong>: Ensure that frontend inputs are properly sanitized to prevent XSS attacks. Also, use CSRF protection mechanisms.</li>
+<li><strong>Dependency Security</strong>: Regularly check the security of dependencies. Use tools (like <code>npm audit</code>) to check for potential vulnerabilities.</li>
+</ul>
+<h3 id="10-code-review-and-continuous-integration">10. <strong>Code Review and Continuous Integration</strong></h3>
+<ul>
+<li><strong>Code Review</strong>: Ensure code quality through code review tools (like GitHub Pull Requests).</li>
+<li><strong>Continuous Integration</strong>: Set up CI/CD tools (like Jenkins, GitHub Actions) for automated building, testing, and deployment.</li>
+</ul>
+<h2 id="vue">Vue</h2>
+<p>000</p>
+<h2 id="react">React</h2>
+<p>000</p>
+<h2 id="angularjs">AngularJS</h2>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="数据库设计规范.html" class="navigation navigation-prev " aria-label="Previous page: Database Design Specifications">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PHP开发规范.html" class="navigation navigation-next " aria-label="Next page: PHP Development Specifications">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Nodejs Development Specifications","level":"1.3.6","depth":2,"next":{"title":"PHP Development Specifications","level":"1.3.7","depth":2,"path":"PHP开发规范.md","ref":"PHP开发规范.md","articles":[]},"previous":{"title":"Database Design Specifications","level":"1.3.5","depth":2,"path":"数据库设计规范.md","ref":"数据库设计规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-livereload","-search","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"shortName":"algorithm4bill"},"github":{"url":"https://github.com/billryan/algorithm-exercise"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"algolia":{"index":"algorithm","applicationID":"9YBMOZR89J","publicKey":"5860a3e55ee72831917b1b9e2a4649ca","freeAccount":"true"},"richquotes":{"todos":true},"highlight":{},"ga":{"token":"UA-32317667-7"},"edit-link":{"base":"https://github.com/billryan/algorithm-exercise/edit/master","label":{"en":"Edit Page","zh-hans":"编辑此页","zh-tw":"編輯此頁"}},"sitemap2":{"hostname":"http://algorithm.yuanbin.me/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"feed":{"title":"Data Structure and Algorithm notes","description":"Data Structure and Algorithm notes/数据结构与算法学习笔记/leetcode/lintcode 题解","hostname":"https://algorithm.yuanbin.me","author":"billryan","categories":["programming","algorithm","leetcode"]}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"toc":true,"paperSize":"a4","margin":{"right":62,"left":62,"top":56,"bottom":56},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"generate":"site","variables":{},"title":"ZhiZhouDevelopmentSpecification","language":"en","gitbook":"*","description":"芝舟开发规范"},"file":{"path":"Nodejs开发规范.md","mtime":"2024-12-13T08:31:01.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-13T08:31:24.693Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+
